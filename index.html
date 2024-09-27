@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Schools in Latin America</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Main Content */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #35424a;
+            border-bottom: 2px solid #e8491d;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Top Schools */
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .school-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .school-card:hover {
+            transform: scale(1.05);
+        }
+
+        .school-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .school-card h3 {
+            margin: 15px 0 10px 0;
+            color: #e8491d;
+        }
+
+        .school-card p {
+            font-size: 14px;
+            color: #555555;
+        }
+
+        /* Admissions & Career Prospects */
+        .info-list {
+            list-style: disc inside;
+            margin-left: 20px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #e8491d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #cf3e17;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">LAT Schools</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#top-schools">Top Schools</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#career">Career Prospects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Discover the Best Schools in Latin America</h1>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Top Schools -->
+        <section id="top-schools">
+            <h2>Top Schools</h2>
+            <div class="schools-grid">
+                <!-- School Card 1 -->
+                <div class="school-card">
+                    <img src="https://via.placeholder.com/300x150" alt="University of São Paulo">
+                    <h3>University of São Paulo (USP)</h3>
+                    <p>Located in Brazil, USP is renowned for its research and academic excellence across various disciplines.</p>
+                </div>
+                <!-- School Card 2 -->
+                <div class="school-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Pontificia Universidad Católica de Chile">
+                    <h3>Pontificia Universidad Católica de Chile (PUC)</h3>
+                    <p>PUC is one of Chile's most prestigious universities, offering top-tier programs in engineering, business, and humanities.</p>
+                </div>
+                <!-- School Card 3 -->
+                <div class="school-card">
+                    <img src="https://via.placeholder.com/300x150" alt="Universidad Nacional Autónoma de México">
+                    <h3>Universidad Nacional Autónoma de México (UNAM)</h3>
+                    <p>UNAM is a leading institution in Mexico, known for its extensive research facilities and diverse academic offerings.</p>
+                </div>
+                <!-- Add more school cards as needed -->
+            </div>
+        </section>
+
+        <!-- Admissions -->
+        <section id="admissions">
+            <h2>Admissions</h2>
+            <p>Applying to top schools in Latin America can be competitive. Here are some general tips to enhance your application:</p>
+            <ul class="info-list">
+                <li><strong>Academic Excellence:</strong> Maintain a high GPA and excel in relevant subjects.</li>
+                <li><strong>Standardized Tests:</strong> Prepare for and achieve strong scores in required exams.</li>
+                <li><strong>Extracurricular Activities:</strong> Engage in meaningful activities that demonstrate leadership and commitment.</li>
+                <li><strong>Personal Statement:</strong> Write a compelling essay that highlights your motivations and goals.</li>
+                <li><strong>Letters of Recommendation:</strong> Obtain strong references from teachers or professionals.</li>
+            </ul>
+        </section>
+
+        <!-- Career Prospects -->
+        <section id="career">
+            <h2>Career Prospects</h2>
+            <p>Graduating from a top school in Latin America opens doors to numerous career opportunities:</p>
+            <ul class="info-list">
+                <li><strong>International Careers:</strong> Opportunities to work with multinational companies and organizations.</li>
+                <li><strong>Research and Development:</strong> Engage in cutting-edge research in your field of study.</li>
+                <li><strong>Entrepreneurship:</strong> Start your own business leveraging the skills and networks gained.</li>
+                <li><strong>Public Sector:</strong> Contribute to government and public policy initiatives.</li>
+                <li><strong>Academic Careers:</strong> Pursue further studies and a career in academia.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Us -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LAT Schools. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
